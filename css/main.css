@@ -1,0 +1,190 @@
+body{
+    display: block;
+    margin: auto;
+    background-color: white;
+    
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    
+}
+
+header{ display: flex;
+    justify-content: center;
+    background-color: #585c73;
+    width: 900px;
+    margin:auto;    
+    color: #c1d0d9;
+    height: 110px;
+    text-align: center;
+    
+}
+.logo{
+    display: flex;
+    
+}
+.title{
+    font-size: 56px;
+    text-align: center;
+    
+}
+.nav{
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    
+    
+}
+
+
+nav{
+    background-color: #6878a6;
+    width: 900px;
+    margin: auto;
+    
+    
+    
+}
+
+button{
+    background-color: #6878a6;
+    font-size: 20px;
+}
+
+button:link{
+    color: #c1d0d9;
+    
+}
+button:visited{
+    color: black;
+    
+}
+button:hover{
+color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+}
+nav a:link{
+    color: #c1d0d9;
+}
+nav a:visited{
+    color: black;
+}
+nav a:hover{
+    color: #ffffff;
+}
+
+.dropbtn {
+   margin: auto;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+     
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #6878a6;
+}
+
+.dropdown-content a {
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+
+
+.show {display: block;}
+
+
+/*changing the main to how i would like it */
+
+#main{
+    width: 900px;
+    justify-content: center;
+    background-color: #b0c1d9;
+    margin: auto;
+    padding-top: 1px;
+}
+
+h2{
+    text-align: center;
+    font-size: 54px;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+#top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.chickenphoto{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    
+}
+
+p{
+    display: flex;
+   padding: 10px;
+    width: 300px;
+    font-size: 23px;
+}
+
+#times{
+    display: flex;
+    justify-content:space-around;
+    width: 500px;
+    margin:auto;
+    
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#ingredients{
+    margin: auto;
+    width: 400px;
+    
+}
+
+#direction{
+    width: 500px;
+    margin: auto;
+    
+    
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Eatable's</title>
+    <link href="css/main.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <header>
+        <img class="logo" src="logo.png" width="100px" height="200px" alt="Logo for the website">
+        <h1 class="title">Recipes</h1>
+        </header>
+        <nav>
+            <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+            <li><div onclick="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Recipe</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="recipe.html">Chicken recipe</a>
+                <a href="pasta.html">Pasta with crab</a>
+                <a href="desert.html">Strawberry fluff</a>
+                 
+                    
+                </div>
+            </div>
+                </li>
+            <li><a href="review.html">Review</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+        
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; 1< dropdowns.length; i++) {
+                    var openDropDown = dropdowns[i];
+                    if (openDropDown.classList.contains('show')) {
+                        openDropDown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+        </script>
+        
+        <div id="main">
+        
+            <h3>Chicken Recipe</h3>
+            <div id="top">
+            <img src="img/chicken.jpg" alt="Chicken asparagus pasta" class="chickenphoto">
+        <p>This chicken asparagus pasta is really good and also very healthy for you and your family. If you don't like something that is in the ingredients, you can always change the ingredients to how you like it.</p>
+                </div>
+            <div id="times">
+            <h4>Prep time: 10mins</h4>
+            <h4>Cook time: 20mins</h4>
+            <h4>Total time: 30mins</h4>
+            </div>
+            
+            <h4>Serving Size: 6</h4>
+            
+            <section id="ingredients">
+            <h4 class="ingredients">Ingredients</h4>
+            <ul>
+                <li>8 oz cooked brown rice pasta</li>
+                <li>1 lb cooked chicken (chopped)</li>
+                <li>15 oz Marinara Sauce of your choice</li>
+                <li>13 oz Artichokes (chopped)</li>
+                <li>8 oz sun dried tomatoes</li>
+                <li>1/2 a bunch of asparagus cut into bite size pieces</li>
+                <li>1/4 cup plain greek yogurt or any other yogurt</li>
+                <li>2 Tbs of olive oil</li>
+                <li>Salt and pepper (for taste)</li>
+                <li>Seasoning of choice (garlic power and oregano and basil) </li>
+                </ul>
+            </section>
+            
+            <section id="direction">
+                <h4 class="direction">Direction</h4>
+                    <ol>
+                    <li>Cook pasta as directed on the box.</li>
+                <li>Cook the chicken either in the oven or on the skillet. Once fully cooked, chopped into pieces. </li>
+                <li>Chop your artichokes and asparagus into bite size while your pasta and chicken is cooking. </li>
+                <li>When the pasta is done, drain the water out and add the artichokes, asparagus, marinara sauce, tomatoes, greek yogurt, olive oil. </li>
+                <li>Mix together and then add the chicken and the seasoning and mix well again. </li>
+                <li>Now you may serve the chicken.</li>
+                <li><span>Optional</span>, You can also add chesse on top put it in the oven to melt and then serve.  </li>
+                
+                
+                </ol>
+            </section>
+            <br><br>
+            
+            
+            
+           </div> 
+            
+        
+    </body>
+</html>

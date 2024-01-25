@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Eatable's</title>
+    <link href="css/main.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <header>
+        <img class="logo" src="logo.png" width="100px" height="200px" alt="Logo for the website">
+        <h1 class="title">Recipes</h1>
+        </header>
+        <nav>
+            <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+            <li><div onclick="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Recipe</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="recipe.html">Chicken recipe</a>
+                <a href="pasta.html">Pasta with crab</a>
+                <a href="desert.html">Strawberry fluff</a>
+                <a href="cake.html">Jiggly Cheesecake</a>   
+                </div>
+            </div>
+                </li>
+            <li><a href="review.html">Review</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+        
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; 1< dropdowns.length; i++) {
+                    var openDropDown = dropdowns[i];
+                    if (openDropDown.classList.contains('show')) {
+                        openDropDown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+        </script>
+        
+        <div id="main">
+        
+            <h3>Strawberry Fluff</h3>
+            <div id="top">
+            <img src="img/chicken.jpg" alt="Chicken asparagus pasta" class="chickenphoto">
+        <p>This chicken asparagus pasta is really good and also very healthy for you and your family. If you don't like something that is in the ingredients, you can always change the ingredients to how you like it.</p>
+                </div>
+            <div id="times">
+            <h4>Prep time: 5mins</h4>
+            <h4>Cook time: 5mins</h4>
+            <h4>Total time: 10mins</h4>
+            </div>
+            
+            <h4>Serving Size: 6</h4>
+            
+            <section id="ingredients">
+            <h4 class="ingredients">Ingredients</h4>
+            <ul>
+                <li>12 oz whipped cream</li>
+                <li>8 oz Condensed milk</li>
+                <li>choped pineapple or sliced</li>
+                <li>strawberry filling </li>
+                <li>nuts (optional)</li>
+                </ul>
+            </section>
+            
+            <section id="direction">
+                <h4 class="direction">Direction</h4>
+                    <ol>
+                    <li>Put the whipped cream in a large container and add the condensed milk and mix throughly.</li>
+                        <br>
+                <li>When you are finished mixing, add the strawberry filling and the pineapple.</li>
+                        <br>
+                <li>When it is mixed well, you can put nuts on top and then put it in the freezers to get hard. </li>
+         <br>
+                
+                
+                </ol>
+            </section>
+            <br><br>
+            
+            
+            
+           </div> 
+            
+        
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Eatable's</title>
+    <link href="css/main.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <header>
+        <img class="logo" src="logo.png" width="100px" height="200px" alt="Logo for the website">
+        <h1 class="title">Recipes</h1>
+        </header>
+        <nav>
+            <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+            <li><div onclick="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Recipe</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="recipe.html">Chicken recipe</a>
+<a href="pasta.html">Pasta with crab</a>
+                <a href="desert.html">Strawberry fluff</a>
+                 
+                    
+                </div>
+            </div>
+                </li>
+            <li><a href="review.html">Review</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+        
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; 1< dropdowns.length; i++) {
+                    var openDropDown = dropdowns[i];
+                    if (openDropDown.classList.contains('show')) {
+                        openDropDown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+        </script>
+        
+        <div id="main">
+        
+            <h3>Pasta with crab</h3>
+            <div id="top">
+            <img src="img/pasta.jpg" alt="Pasta with crab" class="chickenphoto">
+        <p>If you are looking for a easy and healthy meal, try this pasta with crab but be careful the crab will be a bit spicy in this recipe. </p>
+                </div>
+            <div id="times">
+            <h4>Prep time: 10mins</h4>
+            <h4>Cook time: 20mins</h4>
+            <h4>Total time: 30mins</h4>
+            </div>
+            
+            <h4>Serving Size: 6</h4>
+            
+            <section id="ingredients">
+            <h4 class="ingredients">Ingredients</h4>
+            <ul>
+                <li>Salt</li>
+                <li>1 lb of spaghetti</li>
+                <li>2 Tbs Canola oil</li>
+                <li>2 Fresno Chile peppers (finely chopped)</li>
+                <li>2 Cloves of minced garlic  </li>
+                <li>1 cup dry white wine</li>
+                <li>1 lb Jumbo lump crabmeat (picked over)</li>
+                <li>2 Tbs finely chopped parsley</li>
+                <li>1 Tbs finely chopped dill</li>
+                <li>1 Tbs finely chopped mint</li>
+                <li>2 ts finely grated lemon zest</li>
+                <li>ground pepper</li>
+                </ul>
+            </section>
+            
+            <section id="direction">
+                <h4 class="direction">Direction</h4>
+                    <ol>
+                    <li>Bring a large post of salted water to a boil. Cook the spaghetti has the label direct. Reserve 1 cup cooking water, then drain the pasta. </li>
+                        <br>
+                <li>Meanwhile, heat the canola oil in a large high-sided saute pan over medium heat. Add the chiles and garlic and cook until soft and the garlic is pale goldenbrown, about 3 minutes. Add the wine and cool until reducted by half, about 5 minutes. Add the crab and cook until just headted through, about 1 minute. </li>
+                        <br>
+                <li>Add the pasta and some of the cooking water to the pan and cook for another minute. Stir in the parsely, dill, mint and lemon zest. Season with salt and peper and then serve. </li>
+             
+                <br>
+                
+                </ol>
+            </section>
+            <br><br>
+            
+            
+            
+           </div> 
+            
+        
+    </body>
+</html>
